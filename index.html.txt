@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sevgilim İçin</title>
+<style>
+  body { background-color: pink; text-align: center; font-family: Arial, sans-serif; }
+  #content { display: none; }
+</style>
+<script>
+function login() {
+  var sifre = document.getElementById("pass").value;
+  if(sifre === "300922") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  } else {
+    alert("Yanlış şifre aşkım 💔");
+  }
+}
+</script>
+</head>
+<body>
+<div id="login">
+  <h2>🌹 Şifreyi gir aşkım 🌹</h2>
+  <input type="password" id="pass" placeholder="Şifre">
+  <button onclick="login()">Giriş</button>
+</div>
+<div id="content">
+  <h1>💖 Seni çok seviyorum 💖</h1>
+  <p>Bu site sadece senin için.</p>
+</div>
+</body>
+</html>
